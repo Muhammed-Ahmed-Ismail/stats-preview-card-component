@@ -1,0 +1,170 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    width: 375px;
+
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(233, 47%, 7%);
+
+}
+main#container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: hsl(244, 38%, 16%);
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top:100px ;
+}
+#img-container
+{
+    position: relative;
+    margin-bottom: 40px;
+
+}
+img#main-img
+{
+    width: 100%;
+    height: 250px;
+}
+div#img-mask
+{
+    background-color: #9f55cd;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 50%;
+
+}
+section#info-container
+{
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section#info-container h1
+{
+    font-family: 'Inter', sans-serif;
+    font-size: 29px;
+    margin-bottom: 15px;
+
+}
+.reg-p
+{
+    font-size: 15px;
+   font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.6;
+}
+p#main-p
+{
+    width: 85%;
+    margin-bottom: 30px;
+}
+.statistics
+{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.stat-num
+{
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.stat-item
+{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .85em;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+.purple-text
+{
+    color: #9f55cd;
+}
+@media screen and (min-width: 1290px){
+    :root
+    {
+        width: 1440px;
+    }
+    body
+    {
+        width: 100%;
+    }
+    main#container
+    {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        height: 400px;
+        width: 75%;
+    }
+    #img-container
+    {
+        width: 50%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+    img#main-img
+    {
+        width: 100%;
+        height: 100%;
+    }
+    div#img-mask
+    {
+        width: 100%;
+        height: 100%;
+    }
+    section#info-container
+    {
+
+        width: 40%;
+        height: 80%;
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        align-content: flex-start;
+    }
+    section#info-container h1
+    {
+        /*margin-left: 30px;*/
+        width: 80%;
+    }
+    p#main-p
+    {
+        margin-left: 24px;
+    }
+
+    #statistics-container
+    {
+        display: flex;
+        gap: 50px;
+        margin-left: -15px;
+        margin-top: 50px;
+    }
+
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl( 228, 45%, 44%); }
